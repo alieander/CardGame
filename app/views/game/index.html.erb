@@ -1,0 +1,23 @@
+<div id="home">
+<div id="title">
+  <h1>Card Game</h1>
+</div>
+<p>This probably has a better name but I do not know what to call it so I just called it Card Game...</p>
+<h2>Game Play</h2>
+<ol>
+<li>Pick a Magic Card and say its whole name out loud.</li>
+<li>Someone else has to pick a card that <b>Starts</b> with the <b>Last</b> letter of the card named.</li>
+<li>Repeat without reusing cards.</li>
+</ol>
+<h2>Example</h2>
+<p>I say <b>Mother of Runes</b>. The next person could say <b>Snapcaster Mage</b>. After that could be <b>Erase</b>... and so on until you get board.</p>
+<p>I made this site to help me out when I (or whomever I am playing with) get stuck!<br />
+You can get started by picking a random card!</p>
+<%=button_to "Random", :controller => 'cards', :action => "random"%>
+<p>...Or pick a letter to see what is available!</p>
+<div id="alpha">
+<% ("A".."Z").each do |letter| %>
+<%=   button_to letter, :controller => 'cards', :action => "first", :first => letter %>
+<% end %>
+</div>
+</div>

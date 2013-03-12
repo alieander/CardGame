@@ -1,0 +1,28 @@
+// Place all the styles related to the Cards controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+#sidebar {
+  float: left;
+  display: block;
+  text-align: center;
+  height: 100%;
+  margin: 0 20px 0 25px;
+}
+
+#image {
+  margin: 0 0 0 101px;
+}
+
+#num {
+  position: fixed;
+}
