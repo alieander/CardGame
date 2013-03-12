@@ -1,0 +1,27 @@
+<h1>Listing cards</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>First</th>
+    <th>Last</th>
+    <th>Url</th>
+    <th>Img url</th>
+    <th></th>
+  </tr>
+
+<% @cards.each do |card| %>
+  <tr>
+    <td><%= card.id %></td>
+    <td><%= card.name %></td>
+    <td><%= card.first %></td>
+    <td><%= card.last %></td>
+    <td><a href="<%= card.url %>"><%= card.url %></a></td>
+    <td><a href="<%= card.img_url %>"><%= card.img_url %></a></td>
+    <td><%= link_to 'Show', card %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />

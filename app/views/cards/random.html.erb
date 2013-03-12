@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<div id="container">
+  <div id="sidebar">
+    <div><%=request.path_parameters[:action].capitalize%></div>
+    <h1 id="num">
+      <%=@card.first%>
+    </h1>
+  </div>
+  <div id="image">
+    <a href="<%=url_for :controller => 'cards', :action => 'random', :random => @card.last%>">
+    <%= image_tag "magic_img/%s.jpg" % @card.id.to_s %>
+    </a>
+  </div>
+</div>
