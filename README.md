@@ -1,7 +1,7 @@
 CardGame
 ========
 
-This game probably has a better anme but I am not sure what it is... so I called it CardGame...(creative right?)
+This game probably has a better name but I am not sure what it is... so I called it CardGame...(creative right?)
 
 GamePlay
 ========
